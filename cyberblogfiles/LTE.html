@@ -8,21 +8,21 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style-sky-blue.css" rel="stylesheet">
+  <link href="../css/style-sky-blue.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: DevFolio
@@ -46,25 +46,25 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">Home</a>
+            <a class="nav-link js-scroll" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">About</a>
+            <a class="nav-link js-scroll" href="../index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">Services</a>
+            <a class="nav-link js-scroll" href="../index.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">Work</a>
+            <a class="nav-link js-scroll" href="../index.html">Work</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">Road Map</a>
+            <a class="nav-link js-scroll" href="../index.html">Road Map</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="index.html">Contact</a>
+            <a class="nav-link js-scroll" href="../index.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -81,7 +81,7 @@
           <h2 class="intro-title mb-4">Cyber Security Blog</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="../index.html">Home</a>
             </li>
             <li class="breadcrumb-item">
               <a href="#">CyberBlog</a>
@@ -93,7 +93,41 @@
     </div>
   </div>
   <!--/ Intro Skew End /-->
+<style>
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
 
+
+
+</style>
   <!--/ Section Blog-Single Star /-->
   <section class="blog-wrapper sect-pt4" id="blog">
     <div class="container">
@@ -101,32 +135,43 @@
         <div class="col-md-8">
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/kali.webp" class="img-fluid" alt="">
+              <img src="../img/work-1.jpg" class="img-fluid" alt="">
             </div>
             
             <div class="article-content">
               <br></br>
-              <h3>Table of contents</h3>
-              <ol type="1">
-                <li><a href="cyberblogfiles/LTE.html">Vulnerability testing in LTE networks</a></li>
-                <li><a href="cyberblogfiles/Excel_macro_hack.html">Auto run Excel macro with shell command</a></li>
-                <li><a href="404.html">Rubber ducky</a></li>
-                <li><a href="404.html">Open VPN</a></li>
-                <li><a href="404.html">Open SSL</a></li>
-                <li><a href="404.html">Open SSL</a></li>
-                <li><a href="404.html">Private search engine using searXNG </a></li>
-                <li><a href="404.html">Playing wih BEEF</a></li>
-                <li><a href="404.html">Playing wih Burp suit</a></li>
-                <li><a href="404.html">Home lab</a></li>
-                <li><a href="404.html">Building my router</a></li>
-                <li><a href="404.html">Building a TTL computer on a bread board </a></li>
-                <li><a href="404.html">Arduino deauthenticator</a></li>
-                <li><a href="404.html">Using tempest to capture screen from a far</a></li>
-                <li><a href="404.html">Analyzing malware</a></li>
-                <li><a href="404.html">hacking CS GO</a></li>
+              <h2>Vulnerability testing in LTE network</h2>
+              <div class="container mt-5 mb-5">
                 
-   
-              </ol>
+                  
+                    <h4>Learning outcomes</h4>
+                    <ul class="timeline">
+                      <li>
+                        <a target="_blank" href="#">New Web Design</a>
+                        <a href="#" class="float-right">21 March, 2020</a>
+                        <p>Understand cellular infrastructure and its protocols </p>
+                      </li>
+                      <li>
+                        <a href="#">21 000 Job Seekers</a>
+                        <a href="#" class="float-right">4 March, 2020</a>
+                        <p>Finding Vulnerability in Cellular infrastructure</p>
+                      </li>
+                      <li>
+                        <a href="#">Awesome Employers</a>
+                        <a href="#" class="float-right">1 April, 2020</a>
+                        <p>Designing a learning environment for students to test cellular Vulnerability</p>
+                      </li>
+                    </ul>
+                  
+                
+              </div>
+             
+              <p>
+                Our aim is to design a simulation environment for testing and learning different Vulnerabilities in LTE architecture. We have used a Network simulator called NS-3. Network Simulator 3 (ns-3) is an open-source network simulation platform. It is a tool used by academics and developers to investigate network behavior and build and test new networking protocols. Ns-3 provides a versatile and configurable simulation environment that allows users to model many sorts of networks and network behaviors. It also includes a set of tools for evaluating and displaying simulation results. Ns-3 is written in C++ and Python and distributed under the terms of the GNU General Public License.
+
+
+
+              </p>
               
             </div>
           </div>
@@ -267,7 +312,7 @@
   <!--/ Section Blog-Single End /-->
 
   <!--/ Section Contact-Footer Star /-->
-  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(../img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <footer>
       <div class="container">
@@ -282,7 +327,7 @@
                   Licensing information: https://bootstrapmade.com/license/
                   Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
                 -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="../https://bootstrapmade.com/">BootstrapMade</a>
               </div>
             </div>
           </div>
@@ -296,21 +341,21 @@
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/popper/popper.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/counterup/jquery.waypoints.min.js"></script>
-  <script src="lib/counterup/jquery.counterup.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <script src="lib/typed/typed.min.js"></script>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/jquery/jquery-migrate.min.js"></script>
+  <script src="../lib/popper/popper.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/easing/easing.min.js"></script>
+  <script src="../lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="../lib/counterup/jquery.counterup.js"></script>
+  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="../lib/lightbox/js/lightbox.min.js"></script>
+  <script src="../lib/typed/typed.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="../contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 </html>
