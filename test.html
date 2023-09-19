@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Create a diagonal line using linear gradient */
+        
+		.diagonal-line2 {
+			position: absolute;
+            width: 100px;
+            height: 200px;
+            background: linear-gradient(0deg, transparent 49%, black 49%, black 51%, transparent 51%);
+        }
+		 /* CSS for the box */
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 150px;
+            position: absolute;
+            cursor: pointer;
+        }
+		.box1 {
+            width: 100px;
+            height: 300px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 150px;
+            position: absolute;
+            cursor: pointer;
+        }
+		.box3 {
+            width: 100px;
+            height: 150px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 150px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        /* CSS for the expanded options */
+        .box:hover .options {
+            display: block;
+        }
+		.box1:hover .options {
+            display: block;
+        }
+		.box3:hover .options {
+            display: block;
+        }
+
+        .options {
+			width: 100px;
+            height: 100px;
+            display: none;
+            background-color: #fff;
+            color: #333;
+            font-size: 12px; /* Reduce font size */
+            line-height: 1; /* Reduce line height */
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    
+	 <div class="box" id="box1" style="left: 50px; top: 50px;">
+        Internet
+        <div class="options">
+            <p>Mobiles, Computers, Bots</p>
+           
+        </div>
+    </div>
+	<div class="diagonal-line2"  style="left: 200px; top: 40px;"  ></div>
+	<div class="box" id="box2" style="left: 300px; top: 50px;">
+        API gatway
+        <div class="options">
+            <p>hardening, defualt accounts, oauth</p>
+            
+        </div>
+    </div>
+	 <div class="box1" id="box3" style="left: 550px; top: 50px;">
+        Firewall
+        <div class="options">
+            <p>ACL, Egress, Ingress</p>
+           
+        </div>
+    </div>
+	<div class="diagonal-line2"  style="left: 450px; top: 40px;"  ></div>
+	<div class="box3" id="box4" style="left: 750px; top: 50px;">
+        WAF
+        <div class="options">
+            <p>XSS, SQL injection, buffer overflow</p>
+            
+        </div>
+    </div>
+	<div class="diagonal-line2"  style="left: 650px; top: 40px;"  ></div>
+	<div class="box" id="box4" style="left: 950px; top: 50px;">
+        APP
+        <div class="options">
+            <p>Transactions, SQL injection, buffer overflow</p>
+            
+        </div>
+    </div>
+	<div class="diagonal-line2"  style="left: 850px; top: 40px;"  ></div>
+	
+	<div class="box" id="box4" style="left: 1200px; top: 50px;">
+        Database
+        <div class="options">
+            <p>hardening , retension period, communication</p>
+            
+        </div>
+    </div>
+	<div class="diagonal-line2"  style="left: 1100px; top: 40px;"  ></div>
+	<script>
+        // JavaScript to move the box
+        const box = document.getElementById('box1');
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        box.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - box.getBoundingClientRect().left;
+            offsetY = e.clientY - box.getBoundingClientRect().top;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const x = e.clientX - offsetX;
+            const y = e.clientY - offsetY;
+
+            box.style.left = `${x}px`;
+            box.style.top = `${y}px`;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+		const box = document.getElementById('box');
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        box.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - box.getBoundingClientRect().left;
+            offsetY = e.clientY - box.getBoundingClientRect().top;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const x = e.clientX - offsetX;
+            const y = e.clientY - offsetY;
+
+            box.style.left = `${x}px`;
+            box.style.top = `${y}px`;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+		const box = document.getElementById('box3');
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        box.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - box.getBoundingClientRect().left;
+            offsetY = e.clientY - box.getBoundingClientRect().top;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const x = e.clientX - offsetX;
+            const y = e.clientY - offsetY;
+
+            box.style.left = `${x}px`;
+            box.style.top = `${y}px`;
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    </script> 
+</body>
+</html>
+
